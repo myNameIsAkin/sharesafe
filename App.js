@@ -1,12 +1,21 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import "react-native-gesture-handler"
+import { StyleSheet} from 'react-native';
+import MainPage from './screens/mainPage';
+import { createStackNavigator } from "@react-navigation/stack";
+import { NavigationContainer } from "@react-navigation/native";
+import SuccessPage from "./screens/successPage";
 
+const Stack = createStackNavigator()
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <NavigationContainer>
+    <Stack.Navigator   screenOptions={{
+    headerShown: false
+  }}>
+      <Stack.Screen name="Home" component={MainPage} />
+      <Stack.Screen name="Success" component={SuccessPage} />
+    </Stack.Navigator>
+    </NavigationContainer>
   );
 }
 

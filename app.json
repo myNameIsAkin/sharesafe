@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "safeshare",
-    "slug": "safeshare",
+    "slug": "sharesafe",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -21,10 +21,23 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.ajibodu.sharesafe"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "c18b69a3-d945-4b53-a51b-cd19c09fdceb"
+      }
+    },
+    "owner": "ajibodu",
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/c18b69a3-d945-4b53-a51b-cd19c09fdceb"
     }
   }
 }
